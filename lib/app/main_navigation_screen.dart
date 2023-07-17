@@ -61,7 +61,13 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         ],
       ),
       bottomNavigationBar: Container(
-        color: const Color.fromARGB(255, 29, 161, 170),
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.elliptical(30, 20),
+            topRight: Radius.elliptical(30, 20),
+          ),
+          color: Color.fromARGB(255, 29, 161, 170),
+        ),
         child: Padding(
           padding: const EdgeInsets.only(
             //top: Sizes.size0,
